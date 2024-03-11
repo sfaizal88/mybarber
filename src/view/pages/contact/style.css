@@ -1,0 +1,19 @@
+.contact-list {
+    display: flex;
+    flex: 1;
+}
+.contact-item {
+    flex: 1;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contact-item .icon {
+    margin-bottom: 20px !important;
+    margin-right: 0 !important;
+}
+.contact-item .cont h5 {
+    text-align: center !important;
+}
