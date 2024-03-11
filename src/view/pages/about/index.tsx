@@ -7,7 +7,6 @@ const AboutPage = () => {
             <AboutSlider/>
             <Intro hideExtra/>
             <AvailableTime/>
-            <Story/>
         </>
     )
 }
