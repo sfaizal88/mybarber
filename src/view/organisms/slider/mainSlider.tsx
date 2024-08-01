@@ -24,7 +24,6 @@ const MainSlider = () => {
                                 <div className="col-md-8 text-center"> 
                                     <h6>Established 2021</h6>
                                     <h1>Barber Shop You Will Every Need</h1> 
-                                    <h4>Vasantha Nagar, Tiruchanankuppam, Chennai, TN.</h4> 
                                 </div>
                             </div>
                         </div>

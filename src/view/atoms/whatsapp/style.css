@@ -1,0 +1,25 @@
+.whatsapp-container, .whatsapp-container:hover {
+    background: #24d366;
+    color: #fff;
+    position: fixed;
+    bottom: 98px;
+    right: 21px;
+    display: inline-flex;
+    z-index: 99999;
+    padding: 10px 20px;
+    border-radius: 25px;
+    align-items: center;
+    cursor: pointer;
+}
+.whatsapp-container:hover {
+    background-color: #42e17e;
+}
+.whatsapp-icon {
+    font-size: 30px;
+    width: 35px;
+}
+.whatsapp-label {
+    font-size: 16px;
+    font-weight: 600;
+    flex: 1
+}

@@ -1,3 +1,5 @@
+import {WhatsAppWidget} from '../../atoms';
+
 const Footer = () => {
 
     return (
@@ -85,6 +87,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
+            <WhatsAppWidget/>
         </footer>
     )
 }
