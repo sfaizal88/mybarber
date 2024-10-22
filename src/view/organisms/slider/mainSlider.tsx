@@ -3,7 +3,6 @@ const MainSlider = () => {
     return (
         <header className="header slider-fade">
             <div className="owl-carousel owl-theme">
-                
                 <div className="item bg-img" data-overlay-dark="5"  style={{backgroundImage: `url('/img/main/slider/main-slider-1.jpeg')`}}>
                     <div className="v-middle caption">
                     <div className="container">

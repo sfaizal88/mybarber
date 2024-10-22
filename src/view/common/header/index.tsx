@@ -5,7 +5,6 @@
  * 
  */
 // GENERIC IMPORT
-import clsx from 'clsx';
 import {useContext, useState} from 'react';
 import {Box} from '@mui/material';
 import {useNavigate} from 'react-router-dom';
@@ -24,9 +23,13 @@ const Header = () => {
     // CONTEXTS
     const context = useContext(menuContext);
 
+    // STATE
+    const [isMenuOpen, setMenuOpen] = useState(false);
+
     const onMenuPress = (link: string) => {
         navigate(link);
         context?.dispatch({ type: MENU_ACTION_TYPE.UPDATE, payload: link });
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
     return (
@@ -51,7 +54,11 @@ const Header = () => {
                                 <img src={LogoImage} className='logo-img' alt="Picture of the author" width={200} height={83}/>
                             </a>
                         </div>
-                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span className="navbar-toggler-icon"><i className="ti-menu"></i></span> </button>
+                        <button onClick={() => setMenuOpen(prev => !prev)} className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> 
+                            <span className="navbar-toggler-icon">
+                                {!isMenuOpen ? <i className="ti-menu"></i> : <i className="ti-close"></i>}
+                            </span> 
+                        </button>
                         
                         <div className="collapse navbar-collapse" id="navbar">
                             <ul className="navbar-nav ms-auto">

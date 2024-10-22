@@ -1,6 +1,7 @@
 export const pricingList = [
     {
         title: 'Haircut',
+        id: 'haircut',
         items: [
             {title: 'Haircut', info: 'Neat & Clean cut with Disposable cutting sheet, Shampoo, Conditioner & Hairstyling', cost: '125'},
             {title: 'Change of Style', info: 'Change of Style with Disposable cutting sheet & Hairstyling.', cost: '200'},
@@ -11,6 +12,7 @@ export const pricingList = [
     },
     {
         title: 'Beard',
+        id: 'beard',
         items: [
             {title: 'Beard Trim', info: 'Zero Trim', cost: '50'},
             {title: 'Beard Styling', info: '', cost: '99'},
@@ -20,6 +22,7 @@ export const pricingList = [
     },
     {
         title: 'Oil Message',
+        id: 'oilMassage',
         items: [
             {title: 'Head Oil Massage (20Mins)', info: 'Almond/Coconut/Olive/Peppermint Oil', cost: '199'},
             {title: 'TSB’s Signature Head Oil Massage (20Mins)', info: 'The our signature herbal oil', cost: '249'},
@@ -27,6 +30,7 @@ export const pricingList = [
     },
     {
         title: 'Hair & scalp Treatment',
+        id: 'hairScalpTreatment',
         items: [
             {title: 'Hair Spa', info: 'Normal, Dry, Damaged or Repair', cost: '499'},
             {title: 'Anti Dandruff', info: '', cost: '599'},
@@ -35,6 +39,7 @@ export const pricingList = [
     },
     {
         title: 'Colour',
+        id: 'coloring',
         items: [
             {title: 'Mustache', info: '', cost: '99'},
             {title: 'Beard', info: '', cost: '150'},
@@ -47,6 +52,7 @@ export const pricingList = [
     },
     {
         title: 'Bleach / Detan',
+        id: 'bleachDetan',
         items: [
             {title: 'Cleansing', info: '', cost: '49'},
             {title: 'Fruit Bleach', info: '', cost: '150'},
@@ -59,6 +65,7 @@ export const pricingList = [
     },
     {
         title: 'Cleanup',
+        id: 'faceCleanup',
         items: [
             {title: 'Basic Cleanup', info: '', cost: '299'},
             {title: 'Skin Lightening Cleanup', info: '', cost: '599'},
@@ -66,6 +73,7 @@ export const pricingList = [
     },
     {
         title: 'Facial',
+        id: 'beautyFacial',
         items: [
             {title: "BSC's Mini Facial", info: '', cost: '399'},
             {title: 'Fruit Facial', info: '', cost: '499'},
@@ -78,6 +86,7 @@ export const pricingList = [
     },
     {
         title: 'Advance Facial',
+        id: '',
         items: [
             {title: 'Advance Skin Brightening', info: '', cost: '3000'},
             {title: 'Radiance', info: '', cost: '4000'},
@@ -85,6 +94,7 @@ export const pricingList = [
     },
     {
         title: 'Chemical Treatment',
+        id: 'chemicalTreatment',
         items: [
             {title: 'Smoothing', info: '', cost: '900'},
             {title: 'Keratin', info: '', cost: '1200'},
@@ -93,6 +103,7 @@ export const pricingList = [
     },
     {
         title: 'Make-up & hair Styling',
+        id: 'makeupHairStyling',
         items: [
             {title: 'Normal Makeup', info: '', cost: '3000'},
             {title: 'HD Makeup', info: '', cost: '5000'},
@@ -100,6 +111,7 @@ export const pricingList = [
     },
     {
         title: 'Pedicure and Manicure',
+        id: 'pedicureManicure',
         items: [
             {title: 'Express Pedicure', info: '', cost: '399'},
             {title: 'Express Manicure', info: '', cost: '299'},

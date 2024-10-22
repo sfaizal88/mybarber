@@ -55,7 +55,7 @@ const Intro = ({
                             </ul>
                         </div>
                         <div className="col col-md-3 animate-box" data-animate-effect="fadeInUp"> 
-                            <img  src={require('/')} alt="" className="mt-90 mb-30" width={200} height={83}/> 
+                            <img  src={toolsImage} alt="" className="mt-90 mb-30" width={200} height={83}/> 
                         </div>
                         <div className="col col-md-3 animate-box" data-animate-effect="fadeInUp"> 
                             <img  src={aboutImage} alt="" width={200} height={83}/> 

@@ -957,6 +957,7 @@ blockquote cite:before {
     transition: all .4s;
     padding-right: 12px;
     padding-left: 12px;
+    cursor: pointer;
 }
 .navbar .navbar-nav .nav-link.nav-color {
     color: #14100c;
