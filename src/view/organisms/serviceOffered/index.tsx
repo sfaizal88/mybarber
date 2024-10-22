@@ -141,6 +141,15 @@ const ServiceOffered = () => {
                             
                         </div>
                     </div>
+                    <div className="col-md-4" onClick={() => openPricePage('combo')}>
+                        <div className="item">
+                            <span className="icon icon-icon-1-22"></span>
+                                <h5>Combo</h5>
+                                <p>A variety of grooming packages with haircuts, beard trims, and skin treatments for a fresh look.</p>
+                                <div className="shape"> <span className="icon icon-icon-1-1"></span> </div>
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

@@ -14,7 +14,7 @@ const Intro = ({
             <section className="about section-padding" data-scroll-index="1">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-6 mb-30" style={{textAlign: 'left'}}>
+                        <div className="col-md-6 mb-30 mb-center" style={{textAlign: 'left'}}>
                             <div className="section-head mb-20">
                                 <div className="section-subtitle">Since 2021</div>
                                 <div className="section-title">The Socio Barber</div>

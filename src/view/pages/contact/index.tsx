@@ -8,13 +8,13 @@ const ContactPage = () => {
             <ContactSlider/>
             <section className="info-box section-padding">
                 <div className="container">
-                    <div className="row">
+                    <div className="row ">
                         <div className="col-md-12">
                             <div className="section-head mb-30 text-center">
                                 <div className="section-subtitle">Contact Info</div>
                                 <div className="section-title mb-20">Get In Touch</div>
                             </div>
-                            <div className='contact-list'>
+                            <div className='contact-list mb-block'>
                                 <div className="item contact-item"> 
                                     <span className="icon ti-location-pin"></span>
                                     <div className="cont">

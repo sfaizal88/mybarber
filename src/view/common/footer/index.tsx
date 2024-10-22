@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer-top">
                 <div className="container">
-                    <div className="row">
+                    <div className="row mb-center">
                         <div className="col-md-3">
                             <div className="footer-column footer-explore clearfix">
                                 <h3 className="footer-title">The Socio Barber</h3>
@@ -55,7 +55,7 @@ const Footer = () => {
                         <div className="col-md-4 offset-md-1">
                             <div className="footer-column footer-contact">
                                 <h3 className="footer-title">Contact</h3>
-                                <p className="footer-contact-text">27/12A, Thiruvottiyur High Rd, Thangal, 
+                                <p className="footer-contact-text mb-center">27/12A, Thiruvottiyur High Rd, Thangal, 
                                     <br/>Vasantha Nagar, Tiruchanankuppam,
                                     <br/>Chennai, Tamil Nadu 600019, India
                                 </p>
@@ -64,7 +64,7 @@ const Footer = () => {
                                     <p className="footer-contact-phone"><a href="tel:+917010681856">+91 70106 81856</a></p>
                                     <p className="footer-contact-mail"><a href="mailto:thesociobarber@gmail.com">thesociobarber@gmail.com</a></p>
                                 </div>
-                                <div className="footer-about-social-list"> 
+                                <div className="footer-about-social-list "> 
                                     <a href="https://www.instagram.com/thesociobarber/"><i className="ti-instagram"></i></a> 
                                     <a href="https://www.linkedin.com/company/thesociobarber/"><i className="ti-linkedin"></i></a> 
                                     <a href="https://whatsapp.com/channel/0029Va5AdkmCMY0EIs4Mfh2K"><i className="ti-comment"></i></a> 

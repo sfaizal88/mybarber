@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+@media screen and (max-width: 768px) {
+  .mb-center {
+    text-align: center !important;
+    justify-content: center;
+  }
+  .mb-block {
+    display: block !important;
+  }
+}

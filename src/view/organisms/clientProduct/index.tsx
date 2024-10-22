@@ -13,7 +13,7 @@ const ClientProduct = () => {
                     <div className="col-md-12">
                         <div className="row subscribe" >
                             <p style={{"color": "#fff"}} className="text-center">
-                                For franchise inquiries, please contact us at <a href="tel:+919500162231">+91 95001 62231</a> or <a href="tel:+917010681856">+91 70106 81856</a>.
+                                For franchise inquiries, please contact us at <a href="tel:+917010681856">+91 70106 81856</a>.
                             </p>
                         </div>
                     </div>
