@@ -1,3 +1,4 @@
+import {useEffect, useState} from 'react';
 import toolsImage from '../../../assets/img/main/tools.jpg';
 import aboutImage from '../../../assets/img/main/about-1.jpg';
 
@@ -8,7 +9,13 @@ type IntroType = {
 const Intro = ({
     hideExtra
 }: IntroType) => {
+    const [isLoading, setLoading] = useState(false);
 
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false); 
+        }, 2000);
+    }, [isLoading])
     return (
         <>
             <section className="about section-padding" data-scroll-index="1">
@@ -54,10 +61,10 @@ const Intro = ({
                                 </li>
                             </ul>
                         </div>
-                        <div className="col col-md-3 animate-box" data-animate-effect="fadeInUp"> 
-                            <img  src={toolsImage} alt="" className="mt-90 mb-30" width={200} height={83}/> 
+                        <div className="col col-md-3" data-animate-effect="fadeInUp"> 
+                            <img  src={toolsImage} alt="" className="mt-90 mb-30" width={200} height={83}/>
                         </div>
-                        <div className="col col-md-3 animate-box" data-animate-effect="fadeInUp"> 
+                        <div className="col col-md-3" data-animate-effect="fadeInUp"> 
                             <img  src={aboutImage} alt="" width={200} height={83}/> 
                         </div>
                     </div>

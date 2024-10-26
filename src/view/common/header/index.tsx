@@ -26,10 +26,15 @@ const Header = () => {
     // STATE
     const [isMenuOpen, setMenuOpen] = useState(false);
 
-    const onMenuPress = (link: string) => {
-        navigate(link);
-        context?.dispatch({ type: MENU_ACTION_TYPE.UPDATE, payload: link });
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+    const onMenuPress = (link: string, id?: string) => {
+        if (id) {
+            navigate(PATH.HOME_PATH, { state: { sectionId: id } });
+            context?.dispatch({ type: MENU_ACTION_TYPE.UPDATE, payload: link });
+        } else {
+            navigate(link);
+            context?.dispatch({ type: MENU_ACTION_TYPE.UPDATE, payload: link });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
     };
 
     return (
@@ -64,6 +69,7 @@ const Header = () => {
                             <ul className="navbar-nav ms-auto">
                                 <li className="nav-item"><Box className={["nav-link", context.state.value == PATH.HOME_PATH ? "active" : ''].join(" ").trim()} onClick={() => onMenuPress(PATH.HOME_PATH)}>Home</Box></li>
                                 <li className="nav-item"><Box className={["nav-link", context.state.value == PATH.ABOUT_PATH ? "active" : ''].join(" ").trim()} onClick={() => onMenuPress(PATH.ABOUT_PATH)}>About</Box></li>
+                                <li className="nav-item"><Box className={["nav-link", context.state.value == PATH.FRANCHISE ? "active" : ''].join(" ").trim()} onClick={() => onMenuPress(PATH.FRANCHISE, 'franchise')}>Franchise</Box></li>
                                 <li className="nav-item"><Box className={["nav-link", context.state.value == PATH.SERVICES_PATH ? "active" : ''].join(" ").trim()} onClick={() => onMenuPress(PATH.SERVICES_PATH)}>Services</Box></li>
                                 <li className="nav-item"><Box className={["nav-link", context.state.value == PATH.PRICING_PATH ? "active" : ''].join(" ").trim()} onClick={() => onMenuPress(PATH.PRICING_PATH)}>Pricing</Box></li>
                                 <li className="nav-item"><Box className={["nav-link", context.state.value == PATH.CONTACT_PATH ? "active" : ''].join(" ").trim()} onClick={() => onMenuPress(PATH.CONTACT_PATH)}>Contact</Box></li>

@@ -2,12 +2,12 @@
 const ClientProduct = () => {
 
     return (
-        <section className="clients">
+        <section className="clients" id="franchise">
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">
                         <div className="section-head text-center" style={{"marginBottom": "4px"}} >
-                            <div className="section-title white">Franchises</div>
+                            <div className="section-title white">Franchise</div>
                         </div>
                     </div>
                     <div className="col-md-12">
