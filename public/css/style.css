@@ -3493,20 +3493,6 @@ hr {
     transform: scale(1.05);
 }
 
-
-/* magnific popup custom */
-
-.mfp-figure button {
-    border: 0px solid transparent;
-}
-
-button.mfp-close,
-button.mfp-arrow {
-    border: 0px solid transparent;
-    background: transparent;
-}
-
-
 /* ======= Testimonials style ======= */
 
 .testimonials-box {

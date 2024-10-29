@@ -15,7 +15,6 @@
 12. News owlCarousel
 13. Team owlCarousel
 14. Clients owlCarousel
-15. MagnificPopup Gallery
 16. Smooth Scrolling
 17. Scroll back to top
 20. Pricing Tabs
@@ -358,41 +357,6 @@ $(function () {
         }
     });
     
-    // MagnificPopup Gallery
-    $('.gallery').magnificPopup({
-        delegate: '.popimg',
-        type: 'image',
-        gallery: {
-            enabled: true
-        }
-    });
-    $(".img-zoom").magnificPopup({
-        type: "image",
-        closeOnContentClick: !0,
-        mainClass: "mfp-fade",
-        gallery: {
-            enabled: !0,
-            navigateByImgClick: !0,
-            preload: [0, 1]
-        }
-    })
-    $('.magnific-youtube, .magnific-vimeo, .magnific-custom').magnificPopup({
-        disableOn: 700,
-        type: 'iframe',
-        mainClass: 'mfp-fade',
-        removalDelay: 300,
-        preloader: false,
-        fixedContentPos: false
-    });
-    $('.image-popup-vertical-fit').magnificPopup({
-        type: 'image',
-        closeOnContentClick: true,
-        mainClass: 'mfp-img-mobile',
-        image: {
-            verticalFit: true
-        }
-    });
-    
     // Smooth Scrolling
     $('a[href*="#"]')
         // Remove links that don't actually link to anything
@@ -503,26 +467,6 @@ $(function () {
             }
         });
     }
-    $(function () {
-        $('.popup-img').magnificPopup({
-            type: 'image',
-            image: {
-                markup: '<div class="mfp-figure">' + '<div class="close-btn close-icon" role="button">&#215;</div>' + '<div class="mfp-img"></div>' + '<div class="close-btn close-bottom" role="button">閉じる</div>' + '</div>',
-            },
-            callbacks: {
-                open: function () {
-                    closeBtn();
-                },
-            }
-        });
-    });
-    // close-btn
-    function closeBtn() {
-        $('.close-btn').on('click', function () {
-            $('.popup-img').magnificPopup('close');
-        });
-    }
-     
     
     // Preloader
     $("#preloader").fadeOut(800);
