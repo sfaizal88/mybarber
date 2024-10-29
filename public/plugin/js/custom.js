@@ -7,7 +7,6 @@
 03. Close navbar-collapse when a  clicked
 04. Sections background image from data background 
 05. Animations
-06. YouTubePopUp
 07. Slider & Slider Fade OwlCarousel
 08. Testimonials owlCarousel
 09. Barber Services owlCarousel
@@ -19,8 +18,6 @@
 15. MagnificPopup Gallery
 16. Smooth Scrolling
 17. Scroll back to top
-18. Select2
-19. Datepicker
 20. Pricing Tabs
 21. Pricing Accordion
 22. Accordion Box (for Faqs)
@@ -102,9 +99,6 @@ $(function () {
     $(function () {
         contentWayPoint();
     });
-    
-    // YouTubePopUp 
-    $("a.vid").YouTubePopUp();
     
     // Slider & Slider Fade OwlCarousel 
     var owl = $('.header .owl-carousel');
@@ -462,17 +456,7 @@ $(function () {
         }, duration);
         return false;
     })
-    
-    // Select2
-    $('.select2').select2({
-        minimumResultsForSearch: Infinity,
-    });
-    
-    // Datepicker
-    $(".datepicker").datepicker({
-        orientation: "top"
-    });
-    
+
     //  Pricing Tabs
     var wind = $(window);
     $('.tabs .tab-links').on('click', '.item-link', function () {
