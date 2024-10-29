@@ -1,4 +1,4 @@
-import {AboutSlider, Intro, AvailableTime, Story} from '../../organisms';
+import {AboutSlider, Intro, AvailableTime} from '../../organisms';
 
 const AboutPage = () => {
 

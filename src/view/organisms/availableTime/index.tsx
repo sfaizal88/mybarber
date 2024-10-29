@@ -12,7 +12,7 @@ const AvailableTime = () => {
         {day: 'SUN', time: '7 am to 9 pm'},
     ]
     return (
-        <section className="section-padding video-wrapper video bg-img bg-fixed" data-overlay-dark="4" style={{backgroundImage: `url('/img/main/slider/side-slider-2.jpg')`}}>
+        <section className="section-padding video-wrapper video bg-img bg-fixed" data-overlay-dark="4" style={{backgroundImage: `url('/img/slider/side-slider-2.jpg')`}}>
             <div className="container">
                 
                 <div className="row">

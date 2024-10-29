@@ -12,14 +12,9 @@
 09. Barber Services owlCarousel
 10. Barber Services 2 owlCarousel
 11. First-Class Services owlCarousel
-12. News owlCarousel
-13. Team owlCarousel
-14. Clients owlCarousel
 16. Smooth Scrolling
 17. Scroll back to top
 20. Pricing Tabs
-21. Pricing Accordion
-22. Accordion Box (for Faqs)
 23. Preloader
 
 ------------------------------------------------------- */
@@ -262,101 +257,6 @@ $(function () {
         }
     });
     
-    // First-Class Services owlCarousel 
-    $('.first-class-services .owl-carousel').owlCarousel({
-        loop: true,
-        margin: 30,
-        mouseDrag: true,
-        autoplay: false,
-        dots: true,
-        autoplayHoverPause: true,
-        nav: false,
-        navText: ["<span class='lnr ti-angle-left'></span>", "<span class='lnr ti-angle-right'></span>"],
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            600: {
-                items: 2
-            },
-            1000: {
-                items: 3
-            }
-        }
-    });
-    
-    // News owlCarousel 
-    $('.news .owl-carousel').owlCarousel({
-        loop: true,
-        margin: 30,
-        mouseDrag: true,
-        autoplay: false,
-        dots: true,
-        nav: false,
-        navText: ["<span class='lnr ti-angle-left'></span>", "<span class='lnr ti-angle-right'></span>"],
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 2
-            },
-            1000: {
-                items: 2
-            }
-        }
-    });
-    
-
-    
-    // Team owlCarousel 
-    $('.team .owl-carousel').owlCarousel({
-        loop: true,
-        margin: 30,
-        dots: false,
-        mouseDrag: true,
-        autoplay: false,
-        nav: false,
-        navText: ["<span class='lnr ti-angle-left'></span>", "<span class='lnr ti-angle-right'></span>"],
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 2
-            },
-            1000: {
-                items: 3
-            }
-        }
-    });
-    
-    // Clients owlCarousel 
-    $('.clients .owl-carousel').owlCarousel({
-        loop: true,
-        margin: 30,
-        mouseDrag: true,
-        autoplay: true,
-        dots: false,
-        nav: false,
-        navText: ["<span class='lnr ti-angle-left'></span>", "<span class='lnr ti-angle-right'></span>"],
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 2
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 4
-            }
-        }
-    });
-    
     // Smooth Scrolling
     $('a[href*="#"]')
         // Remove links that don't actually link to anything
@@ -437,36 +337,6 @@ $(function () {
         $('.tab-content').fadeOut();
         $("#" + tab2_id).fadeIn();
     });
-    
-    //  Pricing Accordion
-    $(".accordion").on("click", ".title", function () {
-        $(this).next().slideDown();
-        $(".accordion-info").not($(this).next()).slideUp();
-    });
-    $(".accordion").on("click", ".item", function () {
-        $(this).addClass("active").siblings().removeClass("active");
-    });
-    
-    // Accordion Box (for Faqs)
-    if ($(".accordion-box").length) {
-        $(".accordion-box").on("click", ".acc-btn", function () {
-            var outerBox = $(this).parents(".accordion-box");
-            var target = $(this).parents(".accordion");
-            if ($(this).next(".acc-content").is(":visible")) {
-                //return false;
-                $(this).removeClass("active");
-                $(this).next(".acc-content").slideUp(300);
-                $(outerBox).children(".accordion").removeClass("active-block");
-            } else {
-                $(outerBox).find(".accordion .acc-btn").removeClass("active");
-                $(this).addClass("active");
-                $(outerBox).children(".accordion").removeClass("active-block");
-                $(outerBox).find(".accordion").children(".acc-content").slideUp(300);
-                target.addClass("active-block");
-                $(this).next(".acc-content").slideDown(300);
-            }
-        });
-    }
     
     // Preloader
     $("#preloader").fadeOut(800);
