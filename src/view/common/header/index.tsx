@@ -27,6 +27,7 @@ const Header = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
 
     const onMenuPress = (link: string, id?: string) => {
+        setMenuOpen(false)
         if (id) {
             navigate(PATH.HOME_PATH, { state: { sectionId: id } });
             context?.dispatch({ type: MENU_ACTION_TYPE.UPDATE, payload: link });
@@ -65,7 +66,7 @@ const Header = () => {
                             </span> 
                         </button>
                         
-                        <div className="collapse navbar-collapse" id="navbar">
+                        <div className={["collapse", "navbar-collapse", isMenuOpen && "show"].join(" ")} id="navbar">
                             <ul className="navbar-nav ms-auto">
                                 <li className="nav-item"><Box className={["nav-link", context.state.value == PATH.HOME_PATH ? "active" : ''].join(" ").trim()} onClick={() => onMenuPress(PATH.HOME_PATH)}>Home</Box></li>
                                 <li className="nav-item"><Box className={["nav-link", context.state.value == PATH.ABOUT_PATH ? "active" : ''].join(" ").trim()} onClick={() => onMenuPress(PATH.ABOUT_PATH)}>About</Box></li>
