@@ -23,3 +23,17 @@
     font-weight: 600;
     flex: 1
 }
+
+
+@media screen and (max-width: 768px) {
+    .mb-center {
+        text-align: center;
+        justify-content: center;
+    }
+    .whatsapp-icon {
+        margin-right: -10px
+    }
+    .whatsapp-label {
+        display: none;
+    }
+}

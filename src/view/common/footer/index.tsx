@@ -64,7 +64,7 @@ const Footer = () => {
                                     <p className="footer-contact-phone"><a href="tel:+917010681856">+91 70106 81856</a></p>
                                     <p className="footer-contact-mail"><a href="mailto:thesociobarber@gmail.com">thesociobarber@gmail.com</a></p>
                                 </div>
-                                <div className="footer-about-social-list "> 
+                                <div className="footer-about-social-list mb-center"> 
                                     <a href="https://www.instagram.com/thesociobarber/"><i className="ti-instagram"></i></a> 
                                     <a href="https://www.linkedin.com/company/thesociobarber/"><i className="ti-linkedin"></i></a> 
                                     <a href="https://whatsapp.com/channel/0029Va5AdkmCMY0EIs4Mfh2K"><i className="ti-comment"></i></a> 
@@ -81,7 +81,7 @@ const Footer = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <div className="footer-bottom-inner">
-                                <p className="footer-bottom-copy-right">{new Date().getFullYear()} © All rights reserved.</p>
+                                <p className="footer-bottom-copy-right">{new Date().getFullYear()} © All rights reserved to B Company.</p>
                             </div>
                         </div>
                     </div>
