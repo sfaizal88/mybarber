@@ -15,6 +15,7 @@ import * as PATH from '../../routes/constants';
 
 // CONTEXT
 import { menuContext, MENU_ACTION_TYPE } from '../../../contexts/useMenuContext';
+import './styles.css';
 
 const Header = () => {
     // NAVBAR
@@ -53,7 +54,7 @@ const Header = () => {
                     </svg>
                 </div>
                 
-                <nav className="navbar navbar-expand-lg">
+                <nav className={["navbar", "navbar-expand-lg", isMenuOpen && "mobile-navbar"].join(" ")}>
                     <div className="container">
                         <div className="logo-wrapper">
                             <a className="logo" href="index.html"> 

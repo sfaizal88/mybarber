@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import {MainSlider, Intro, AvailableTime, ServiceOffered, ClientProduct} from '../../organisms';
+import {MainSlider, Intro, AvailableTime, ServiceOffered, ClientProduct, CustomerReview} from '../../organisms';
 
 const HomePage = () => {
     const location = useLocation();
@@ -26,7 +26,7 @@ const HomePage = () => {
             }
         }
     }, [location]);
-
+    // CustomerReview
     return (
         <>
             <MainSlider/>
@@ -34,6 +34,7 @@ const HomePage = () => {
             <AvailableTime/>
             <ServiceOffered/>
             <ClientProduct/>
+            <CustomerReview/>
         </>
     )
 }

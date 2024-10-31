@@ -1,0 +1,103 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .review-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+  }
+  
+  .review {
+    min-width: 33.33%; /* Display three items per slide */
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .review-box {
+    background: #fff;
+    box-sizing: border-box;
+    padding: 16px 24px;
+    border-radius: 8px;
+    margin: 16px;
+    height: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .review-row {
+    display: flex;
+    align-items: 'center';
+    margin-bottom: 2px;
+  }
+  .review .title-row {
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    display: inline-flex;
+    gap: 6px;
+  }
+  .review .title {
+    font-weight: 600;
+    text-align: left;
+    font-size: 16px;
+    color: #000000;
+  }
+  .review p {
+    height: auto;
+    font-size: 13px;
+    text-align: left;
+    font-style: normal;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .review .stars {
+    display: flex;
+    color: #f6bb05;
+    gap: 4px;
+    margin-top: 12px;
+  }
+  .review .verified-img {
+    width: 15px;
+    height: 15px;
+  }
+  .review .google-img {
+    width: 15px;
+    height: 15px;
+  }
+  
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .prev-button {
+    left: 10px;
+  }
+  
+  .next-button {
+    right: 10px;
+  }
+  
+
+
+@media screen and (max-width: 768px) {
+    .review {
+        min-width: 100%; /* Show one item per slide on mobile */
+    }
+    .review p {
+        font-size: 15px;
+    }
+    .review .title {
+        font-size: 16px;
+    }
+}

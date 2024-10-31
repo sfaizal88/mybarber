@@ -759,7 +759,9 @@ input[type="submit"] {
 
 
 /* ======= Section style ======= */
-
+.customer-review {
+    padding: 90px 0 90px 0;
+}
 .section-padding {
     padding: 120px 0;
 }
