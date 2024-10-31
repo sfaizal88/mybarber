@@ -68,6 +68,10 @@
     width: 15px;
     height: 15px;
   }
+  .review .user-img {
+    width: 22px;
+    height: 22px;
+  }
   
   .prev-button,
   .next-button {

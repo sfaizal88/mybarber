@@ -81,7 +81,7 @@ const ReviewCarousel = () => {
                         <div className="review-box">
                             <div className="review-row">
                                 <div className="title-row">
-                                    <img src={UserImage} alt="Verified" className="google-img"/>
+                                    <img src={UserImage} alt="Verified" className="user-img"/>
                                     <span className="title">{review.author}</span>
                                 </div>
                                 <div style={{width: 50, textAlign: 'right'}}>
