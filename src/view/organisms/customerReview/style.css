@@ -8,12 +8,12 @@
     display: flex;
     transition: transform 0.5s ease-in-out;
     will-change: transform;
+    margin: 8px;
   }
   
   .review {
     min-width: 33.33%; /* Display three items per slide */
     box-sizing: border-box;
-    padding: 20px;
     text-align: center;
   }
 
@@ -22,9 +22,9 @@
     box-sizing: border-box;
     padding: 16px 24px;
     border-radius: 8px;
-    margin: 16px;
+    margin: 16px 20px;
     height: 100%;
-    padding-bottom: 0;
+    padding-bottom: 12px;
     margin-bottom: 0;
   }
   .review-row {
@@ -37,22 +37,25 @@
     align-items: center;
     flex: 1;
     display: inline-flex;
-    gap: 6px;
+    gap: 8px;
   }
   .review .title {
     font-weight: 600;
     text-align: left;
-    font-size: 16px;
+    font-size: 17px;
     color: #000000;
   }
   .review p {
-    height: auto;
-    font-size: 13px;
-    text-align: left;
     font-style: normal;
-    padding-right: 0;
+    height: auto;
+    margin-top: 6px;
     padding-bottom: 0;
-    margin-bottom: 0;
+    padding-right: 0;
+    text-align: left;
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.75em;
   }
   .review .stars {
     display: flex;
@@ -72,7 +75,6 @@
     width: 22px;
     height: 22px;
   }
-  
   .prev-button,
   .next-button {
     position: absolute;
@@ -83,16 +85,12 @@
     font-size: 2rem;
     cursor: pointer;
   }
-  
   .prev-button {
     left: 10px;
   }
-  
   .next-button {
     right: 10px;
   }
-  
-
 
 @media screen and (max-width: 768px) {
     .review {

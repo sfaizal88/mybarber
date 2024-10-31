@@ -51,7 +51,7 @@ const ReviewCarousel = () => {
 
     // **Auto-Slide every 3 seconds**
     useEffect(() => {
-        const intervalId = setInterval(handleNext, 3000); // Slide every 3 seconds
+        const intervalId = setInterval(handleNext, 12000); // Slide every 12 seconds
 
         // Clear interval on component unmount
         return () => clearInterval(intervalId);
