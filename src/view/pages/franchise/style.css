@@ -3,5 +3,45 @@
     padding: 12px 32px;
     color: #fff;
     border-radius: 4px;
+    cursor: pointer;
 
+}
+.disabled-btn {
+    background-color: #ccc !important;
+    cursor: not-allowed;
+}
+.whatsapp-btn {
+    background-color: #24d366 !important;
+    padding: 12px 18px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.9;
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    opacity: 1;
+}
+.whatsapp-btn:hover {
+    opacity: 0.8;
+    padding: 12px 18px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.9;
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    gap: 8px
+}
+.display-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }

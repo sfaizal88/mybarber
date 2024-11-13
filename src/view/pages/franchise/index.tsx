@@ -4,6 +4,9 @@ import './style.css';
 
 const FranchisePage = () => {
     // STATE
+    const message = encodeURI("Hi! I would like to inquire about the franchise.");
+    const phoneNo = 917010681856;
+    const link = `https://wa.me/${phoneNo}?text=${message}`;
     const [state, setState] = useState({
         name: '', email: '', mobileNo: '', whatsAppNo: '', location: '', message: ''
     });
@@ -33,6 +36,7 @@ const FranchisePage = () => {
             console.error('Error:', error);
           }
     }
+
 
     return (
         <>
@@ -89,8 +93,12 @@ const FranchisePage = () => {
                                 </div>
                             </div>    
                             <div className="row ">
-                                <div className="col-md-12 text-center">
-                                    <input type='button' value='Submit' className='primary-btn' onClick={onSubmit}/>
+                                <div className="col-md-12 display-flex">
+                                    <input type='button' disabled value='Coming soon' className='primary-btn disabled-btn' onClick={onSubmit}/>&nbsp;&nbsp;
+                                    <a className='whatsapp-btn' href={link} target='_blank'>
+                                        <i className="fa fa-whatsapp" style={{fontSize: "20px"}}></i>
+                                        Whats App for Franchise
+                                    </a>
                                 </div>
                             </div>   
                         </div>
