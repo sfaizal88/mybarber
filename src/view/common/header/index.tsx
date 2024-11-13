@@ -71,7 +71,7 @@ const Header = () => {
                             <ul className="navbar-nav ms-auto">
                                 <li className="nav-item"><Box className={["nav-link", context.state.value == PATH.HOME_PATH ? "active" : ''].join(" ").trim()} onClick={() => onMenuPress(PATH.HOME_PATH)}>Home</Box></li>
                                 <li className="nav-item"><Box className={["nav-link", context.state.value == PATH.ABOUT_PATH ? "active" : ''].join(" ").trim()} onClick={() => onMenuPress(PATH.ABOUT_PATH)}>About</Box></li>
-                                <li className="nav-item"><Box className={["nav-link", context.state.value == PATH.FRANCHISE ? "active" : ''].join(" ").trim()} onClick={() => onMenuPress(PATH.FRANCHISE, 'franchise')}>Franchise</Box></li>
+                                <li className="nav-item"><Box className={["nav-link", context.state.value == PATH.FRANCHISE ? "active" : ''].join(" ").trim()} onClick={() => onMenuPress(PATH.FRANCHISE)}>Franchise</Box></li>
                                 <li className="nav-item"><Box className={["nav-link", context.state.value == PATH.SERVICES_PATH ? "active" : ''].join(" ").trim()} onClick={() => onMenuPress(PATH.SERVICES_PATH)}>Services</Box></li>
                                 <li className="nav-item"><Box className={["nav-link", context.state.value == PATH.PRICING_PATH ? "active" : ''].join(" ").trim()} onClick={() => onMenuPress(PATH.PRICING_PATH)}>Pricing</Box></li>
                                 <li className="nav-item"><Box className={["nav-link", context.state.value == PATH.CONTACT_PATH ? "active" : ''].join(" ").trim()} onClick={() => onMenuPress(PATH.CONTACT_PATH)}>Contact</Box></li>

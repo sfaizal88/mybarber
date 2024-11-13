@@ -7,6 +7,7 @@ export {default as AboutSlider} from './slider/aboutSlider';
 export {default as PricingSlider} from './slider/pricingSlider';
 export {default as ServicesSlider} from './slider/servicesSlider';
 export {default as ContactSlider} from './slider/contactSlider';
+export {default as FranchiseSlider} from './slider/franchiseSlider';
 export {default as PricingPlan} from './pricingPlan';
 export {default as ServiceOffered} from './serviceOffered';
 export {default as CustomerReview} from './customerReview';

@@ -21,6 +21,7 @@ import AboutPage from '../pages/about';
 import ContactPage from '../pages/contact';
 import PricePage from '../pages/pricing';
 import ServicesPage from '../pages/services';
+import FranchisePage from '../pages/franchise';
 
 // STYLE IMPORT
 import useStyles from './styles';
@@ -39,6 +40,7 @@ const AppRoutes = () => {
                 <Route path={PATH.CONTACT_PATH} element={<ContactPage />}/>
                 <Route path={PATH.PRICING_PATH} element={<PricePage />}/>
                 <Route path={PATH.SERVICES_PATH} element={<ServicesPage />}/>
+                <Route path={PATH.FRANCHISE} element={<FranchisePage />}/>
             </Routes>
             <Footer/>
         </Box>
