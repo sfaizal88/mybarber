@@ -11,3 +11,4 @@ export {default as FranchiseSlider} from './slider/franchiseSlider';
 export {default as PricingPlan} from './pricingPlan';
 export {default as ServiceOffered} from './serviceOffered';
 export {default as CustomerReview} from './customerReview';
+export {default as PrivacyPolicySlider} from './slider/privacyPolicySlider';

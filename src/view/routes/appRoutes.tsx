@@ -22,6 +22,7 @@ import ContactPage from '../pages/contact';
 import PricePage from '../pages/pricing';
 import ServicesPage from '../pages/services';
 import FranchisePage from '../pages/franchise';
+import PrivacyPolicy from '../pages/infoPage/privacyPolicy';
 
 // STYLE IMPORT
 import useStyles from './styles';
@@ -41,6 +42,7 @@ const AppRoutes = () => {
                 <Route path={PATH.PRICING_PATH} element={<PricePage />}/>
                 <Route path={PATH.SERVICES_PATH} element={<ServicesPage />}/>
                 <Route path={PATH.FRANCHISE} element={<FranchisePage />}/>
+                <Route path={PATH.PRIVACY_POLICY_PATH} element={<PrivacyPolicy />}/>
             </Routes>
             <Footer/>
         </Box>

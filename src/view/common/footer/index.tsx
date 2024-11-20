@@ -1,6 +1,28 @@
+import {Box} from '@mui/material';
+import {useContext} from 'react';
+import {useNavigate} from 'react-router-dom';
+
+// ROUTER IMPORT
+import * as PATH from '../../routes/constants';
+
 import {WhatsAppWidget} from '../../atoms';
 
+// CONTEXT
+import { menuContext, MENU_ACTION_TYPE } from '../../../contexts/useMenuContext';
+import './styles.css';
+
 const Footer = () => {
+    // NAVBAR
+    const navigate = useNavigate();
+
+    // CONTEXTS
+    const context = useContext(menuContext);
+
+    const onMenuPress = (link: string) => {
+        navigate(link);
+        context?.dispatch({ type: MENU_ACTION_TYPE.UPDATE, payload: link });
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
 
     return (
         <footer className="footer">
@@ -13,6 +35,12 @@ const Footer = () => {
                                 <div className="row subscribe">
                                     <div className="col-md-12">
                                         <p>From head-turning haircuts and beard sculpting to pampering massages and color transformations, cut with the coolest crew in town. Book your appointment today and let's get socio!</p>
+                                    </div>
+                                </div>
+                                <h3 className="footer-title">Useful links</h3>
+                                <div className="row subscribe">
+                                    <div className="col-md-12">
+                                        <Box className={"footer-link"} onClick={() => onMenuPress(PATH.PRIVACY_POLICY_PATH)}>Privacy Policy</Box>
                                     </div>
                                 </div>
                             </div>
